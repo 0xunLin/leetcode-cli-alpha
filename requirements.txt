@@ -1,0 +1,6 @@
+typer
+requests
+pytest
+playwright
+python-dotenv
+beautifulsoup4

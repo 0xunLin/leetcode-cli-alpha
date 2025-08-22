@@ -1,4 +1,4 @@
-# LC_AT — LeetCode Local Assistant (MVP)
+# LC-AT — LeetCode Local Assistant (MVP)
 
 A minimal CLI tool to:
 - Pull LeetCode problems offline (Markdown + starter solution).

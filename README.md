@@ -24,12 +24,12 @@ This README shows how to set up and use the tool as a complete beginner.
 
 PowerShell (Windows):
 ```powershell
-iwr -useb https://raw.githubusercontent.com/0xunLin/leetcode-cli-alpha/main/scripts/bootstrap.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/0xunLin/leetcode-cli-alpha/main/scripts/remote.ps1 | iex
 ```
 
 Bash (Linux / macOS):
 ```bash
-curl -sSL https://raw.githubusercontent.com/0xunLin/leetcode-cli-alpha/main/scripts/bootstrap.sh | bash
+curl -sSL https://raw.githubusercontent.com/0xunLin/leetcode-cli-alpha/main/scripts/remote.sh | bash
 ```
 
 Notes:

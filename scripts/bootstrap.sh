@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
-proj_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+# Use current working directory as project root (works with curl | bash)
+proj_root="$PWD"
 echo "[bootstrap] Project root: $proj_root"
 cd "$proj_root"
 

@@ -22,8 +22,6 @@ This README shows how to set up and use the tool as a complete beginner.
 
 ## One-line bootstrap (remote)
 
-If you host this repo publicly (example: https://github.com/0xunLin/leetcode-cli-alpha) you can offer a one-line remote bootstrap. Only run remote scripts from URLs you trust. The example below uses raw GitHub URLs for the bootstrap scripts included in this repo.
-
 PowerShell (Windows):
 ```powershell
 iwr -useb https://raw.githubusercontent.com/0xunLin/leetcode-cli-alpha/main/scripts/bootstrap.ps1 | iex

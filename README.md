@@ -20,6 +20,26 @@ This README shows how to set up and use the tool as a complete beginner.
 
 ---
 
+## One-line bootstrap (remote)
+
+If you host this repo publicly (example: https://github.com/0xunLin/leetcode-cli-alpha) you can offer a one-line remote bootstrap. Only run remote scripts from URLs you trust. The example below uses raw GitHub URLs for the bootstrap scripts included in this repo.
+
+PowerShell (Windows):
+```powershell
+iwr -useb https://raw.githubusercontent.com/0xunLin/leetcode-cli-alpha/main/scripts/bootstrap.ps1 | iex
+```
+
+Bash (Linux / macOS):
+```bash
+curl -sSL https://raw.githubusercontent.com/0xunLin/leetcode-cli-alpha/main/scripts/bootstrap.sh | bash
+```
+
+Notes:
+- The bootstrap scripts create a virtual environment (.venv), install Python dependencies, install Playwright browsers, and create a `.env` from `.env.example` if missing.
+- Review the script before running a remote one-liner. Remote execution is convenient but has security risks.
+
+---
+
 ## Quick setup (PowerShell)
 
 Open PowerShell in the project folder `c:\Users\DELL\Desktop\LC_at` and run:
@@ -165,4 +185,4 @@ If something breaks, open an issue or ask for help with:
 - The problem slug you tested with
 - Whether Gemini key and Playwright auth were configured
 
-Happy hacking — start by pulling `two-sum` and running the
+Happy hacking — start by pulling `two-sum` and running the tooling.

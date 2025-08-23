@@ -1,0 +1,21 @@
+[project]
+name = "lc-at"
+version = "0.1.0"
+description = "LeetCode local assistant CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "You" }]
+license = { text = "MIT" }
+
+dependencies = [
+  "typer[all]>=0.7",
+  "requests",
+  "beautifulsoup4",
+  "python-dotenv",
+  "pytest",
+  "playwright",
+  "pydantic",
+]
+
+[project.scripts]
+lc-at = "lc_at.cli:main"

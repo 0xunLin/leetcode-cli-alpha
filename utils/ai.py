@@ -68,7 +68,7 @@ def _parse_gemini_response(resp_json: dict) -> str:
                 return text
             # some variants embed content in 'text'
             ## if first.get("type") == "message" and isinstance(first.get("text"), str):
-            ##     return first.get("text")
+            ##    return first.get("text")
 
     # 3) top-level 'text' or 'response'
     for k in ("text", "response", "result"):
@@ -99,10 +99,10 @@ def test_stub():
 '''
 
     prompt = (
-        "You are a code-generation assistant. Input: a LeetCode problem statement.\n"
+        f"You are a code-generation assistant. Input: a LeetCode problem statement {problem_statement}.\n"
         "Output: a single JSON object ONLY with keys: 'readme', 'starter', 'tests'.\n"
-        "- 'starter' must be a minimal Python file string that defines class Solution with required method signatures.\n"
-        "- 'tests' must be pytest-compatible code string that imports Solution from solution.py and contains unit tests\n"
+        f"- 'starter' must be a minimal Python file string for {problem_statement} that defines class Solution with required method signatures, parameters and arguments.\n"
+        f"- 'tests' must be pytest-compatible code string that imports Solution from solution.py and contains all basic test cases necessary for the leetcode problem {problem_statement}\n"
         "  covering typical cases and edge cases. Do NOT include extraneous commentary.\n\n"
         "Problem statement:\n\n"
         f"{problem_statement}\n\n"
